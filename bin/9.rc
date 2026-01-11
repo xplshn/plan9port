@@ -1,0 +1,8 @@
+#!/home/anto/Documents/ItAll/plan9port/bin/rc
+
+if(~ $#PLAN9 0)
+	PLAN9=/home/anto/Documents/ItAll/plan9port
+if(! ~ $path(1) $PLAN9/bin)
+	path=($PLAN9/bin $path)
+
+~ $#* 0 || exec $*

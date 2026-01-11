@@ -1,0 +1,7 @@
+<$PLAN9/src/mkhdr
+TARG=ox
+OFILES=	ox.$O	cmd.$O	plumb.$O	edit.$O	tagcmds.$O
+HFILES=ox.h
+LIB=$PLAN9/lib/libomero.a $PLAN9/lib/libb.a $PLAN9/lib/liberror.a $PLAN9/lib/libthread.a
+
+<$PLAN9/src/mkone

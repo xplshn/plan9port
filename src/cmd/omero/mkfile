@@ -1,0 +1,18 @@
+<$PLAN9/src/mkhdr
+TARG=omero
+
+PANNELS=	image.$O	draw.$O	gauge.$O	text.$O	frame.$O	block.$O	undo.$O	panels.$O
+OFILES=	fs.$O	gui.$O	layout.$O	util.$O	panel.$O	cmd.$O	block.$O	con.$O	cook.$O	$PANNELS
+HFILES=	gui.h	cook.h
+LIB=$PLAN9/lib/libomero.a \
+    $PLAN9/lib/libframe.a \
+    $PLAN9/lib/libdraw.a \
+    $PLAN9/lib/libthread.a \
+    $PLAN9/lib/lib9p.a \
+    $PLAN9/lib/libavl.a \
+    $PLAN9/lib/libb.a \
+    $PLAN9/lib/liberror.a \
+    $PLAN9/lib/lib9.a
+
+<$PLAN9/src/mkone
+

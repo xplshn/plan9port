@@ -1,0 +1,5 @@
+<$PLAN9/src/mkhdr
+LIB=libomero.a
+OFILES=	srv.$O	panel.$O	plumb.$O	port.$O
+HFILES=$PLAN9/include/omero.h
+<$PLAN9/src/mksyslib

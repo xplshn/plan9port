@@ -1,0 +1,5 @@
+<$PLAN9/src/mkhdr
+LIB=liberror.a
+OFILES=error.$O
+HFILES=$PLAN9/include/error.h
+<$PLAN9/src/mksyslib

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -e ~/.bashrc ] ; then
+	. ~/.bashrc
+fi
+arch=x86_64
+if arch -arch arm64 date >/dev/null 2>&1; then
+	arch=arm64
+fi
+PLAN9=${PLAN9:-/home/anto/Documents/ItAll/plan9port}
+
+bin=$PLAN9/bin
+IFS=$'\n'
+
+for file in $($bin/macargv)
+do
+	arch -arch $arch $bin/macedit "$file"
+done

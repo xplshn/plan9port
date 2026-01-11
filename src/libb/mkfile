@@ -1,0 +1,5 @@
+<$PLAN9/src/mkhdr
+LIB=libb.a
+OFILES=	createf.$O	readf.$O	writef.$O	readfstr.$O	writefstr.$O	announcevol.$O	cmdoutput.$O	tcmdoutput.$O	compat.$O
+HFILES=$PLAN9/include/b.h
+<$PLAN9/src/mksyslib

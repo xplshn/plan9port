@@ -1,0 +1,5 @@
+#!/home/anto/Documents/ItAll/plan9port/bin/rc
+
+for(i)
+	plumb -dseemail -a 'filetype=vwhois digest='$i.$pid' mailtype=new sender='$i Mail/mbox/XXXvwhois
+
